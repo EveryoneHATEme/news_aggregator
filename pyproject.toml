@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "news-classification"
+version = "0.1.0"
+description = ""
+authors = ["mihett05 <mihett05@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "news_classification"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+telethon = "^1.30.3"
+python-dotenv = "^1.0.0"
+num2words = "^0.5.12"
+tensorflow-io-gcs-filesystem = "0.31.0"
+tensorflow = "^2.13.0"
+pydantic = "^2.3.0"
+pydantic-settings = "^2.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
