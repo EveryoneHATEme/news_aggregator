@@ -10,6 +10,7 @@ if os.path.exists(Path(__file__).parent / ".env"):
 class Settings(BaseSettings):
     TG_API_ID: int
     TG_API_HASH: str
+    TG_TOKEN: str
 
 
 settings = Settings()

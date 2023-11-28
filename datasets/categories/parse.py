@@ -16,6 +16,12 @@ async def parse_from_channel(url: str) -> list[str]:
     ]
 
 
+async def get_messages_from_channel(url: str) -> list[str]:
+    channel = await client.get_entity(url)
+    messages = await client.iter_messages(channel, limit=20).collect()
+    return [msg.message for msg in messages]
+
+
 async def parse_and_save(urls: list[str], category: Categories):
     if not category_exists(category):
         rows = []

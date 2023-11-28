@@ -1,10 +1,4 @@
 import asyncio
-from datasets.duplicates.nyan import parse_nyan
-from datasets.categories.parse import parse_all
+from bot.bot import dp, bot
 
-
-async def main():
-    await parse_all()
-
-
-asyncio.run(main())
+asyncio.run(dp.start_polling(bot))
