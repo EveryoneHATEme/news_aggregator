@@ -1,8 +1,11 @@
 # NewsAggregator
 
 ## Team:
+
 -Mohamed Nguira (m.nguira@innopolis.university)
+
 -Alsu Abdulmanova (a.abdulmanova@innopolis.university)
+
 -Yakov Dementyev (y.dementyev@innopolis.university)
 
 
